@@ -6,6 +6,14 @@ y_positions = [-70, -40, -10, 20, 50, 80]
 screen = Screen()
 screen.setup(width=500, height=450)
 
+for n in range(6):
+    new_turtle = Turtle(shape="turtle")
+    new_turtle.color(colors[n])
+    new_turtle.penup()
+    new_turtle.goto(-230, y_positions[n])
+    turtles.append(new_turtle)
+
+
 # def move_forwards():
 #     tim.penup()
 #     tim.forward(10)
